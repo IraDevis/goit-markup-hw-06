@@ -349,7 +349,7 @@ footer {
   min-height: 50px;
   padding: 10px 32px;
   border-radius: 4px;
-  outline: none;
+  outline: transparent;
 
   font-weight: 700;
   font-size: 16px;
@@ -424,7 +424,7 @@ footer {
 
 .close-button:hover,
 .close-button:focus {
-  outline: none;
+  outline: transparent;
 }
 
 .close-icon {
