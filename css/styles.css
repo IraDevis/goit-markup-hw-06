@@ -538,24 +538,40 @@ footer {
   color: var(--main-text-color);
 }
 
-.modal-input:focus {
-  outline: transparent;
-  border-color: var(--accent-text-color);
-}
-
 .modal-input {
   width: 448px;
   height: 40px;
   margin-top: 4px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border-color 250ms var(--time-function), color 250ms var(--time-function);
 }
 
 .modal-icon {
   position: absolute;
   z-index: 3;
-  top: 14px;
   left: 15px;
+  bottom: 14px;
+  fill: var(--secondary-text-color);
+
+  transition: fill 250ms var(--time-function);
+}
+
+.modal-icon.name {
+  width: 12px;
+  height: 12px;
+}
+
+.modal-icon.tel {
+  width: 13px;
+  height: 13px;
+}
+
+.modal-icon.mail {
+  width: 15px;
+  height: 12px;
 }
 
 .comment-label {
@@ -574,6 +590,15 @@ footer {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-input:focus {
+  outline: transparent;
+  border-color: var(--accent-text-color);
+}
+
+.modal-input:focus + .modal-icon {
+  fill: var(--accent-text-color);
 }
 
 .checkbox-label {
