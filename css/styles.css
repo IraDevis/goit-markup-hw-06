@@ -552,26 +552,13 @@ footer {
 .modal-icon {
   position: absolute;
   z-index: 3;
-  left: 15px;
-  bottom: 14px;
+  left: 12px;
+  bottom: 11px;
+  width: 18px;
+  height: 18px;
   fill: var(--secondary-text-color);
 
   transition: fill 250ms var(--time-function);
-}
-
-.modal-icon.name {
-  width: 12px;
-  height: 12px;
-}
-
-.modal-icon.tel {
-  width: 13px;
-  height: 13px;
-}
-
-.modal-icon.mail {
-  width: 15px;
-  height: 12px;
 }
 
 .comment-label {
