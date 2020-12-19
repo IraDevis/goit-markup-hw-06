@@ -17,6 +17,12 @@ a {
   text-decoration: none;
   color: var(--main-text-color);
   outline: none;
+  cursor: pointer;
+}
+
+button:hover,
+input:hover {
+  cursor: pointer;
 }
 
 body {
@@ -482,23 +488,21 @@ footer {
   border-radius: 50%;
 
   background-color: var(--main-bg-color);
-}
 
-.close-icon {
-  width: 18px;
-  height: 18px;
-  background-position: center;
-}
-
-.close-icon:hover,
-.close-icon:focus {
-  fill: currentColor;
+  transition: color 250ms var(--time-function);
 }
 
 .close-button:hover,
 .close-button:focus {
   outline: transparent;
   color: var(--accent-text-color);
+}
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  fill: currentColor;
 }
 
 .modal-form {
@@ -523,6 +527,7 @@ footer {
 }
 
 .modal-label {
+  position: relative;
   margin-bottom: 10px;
 
   font-size: 12px;
@@ -531,6 +536,11 @@ footer {
   text-align: left;
 
   color: var(--main-text-color);
+}
+
+.modal-input:focus {
+  outline: transparent;
+  border-color: var(--accent-text-color);
 }
 
 .modal-input {
@@ -543,6 +553,7 @@ footer {
 
 .modal-icon {
   position: absolute;
+  z-index: 3;
   top: 14px;
   left: 15px;
 }
@@ -573,6 +584,11 @@ footer {
   text-align: center;
 
   color: var(--main-text-color);
+}
+
+.contract-link {
+  text-decoration: underline;
+  color: var(--accent-text-color);
 }
 
 .send-button {
