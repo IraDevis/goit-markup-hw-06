@@ -589,6 +589,8 @@ footer {
 }
 
 .checkbox-label {
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
@@ -596,6 +598,22 @@ footer {
   text-align: center;
 
   color: var(--main-text-color);
+}
+
+.check-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 2px;
+
+  transition: background-color 250ms var(--time-function), border 250ms var(--time-function);
+}
+
+.checkbox-input:checked + .check-icon {
+  background-color: var(--accent-text-color);
+  background-origin: border-box;
+  border: none;
 }
 
 .contract-link {
